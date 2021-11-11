@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    tools:context=".signUpActivity"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id = "@+id/layout_top"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation = "vertical"
+    android:layout_centerHorizontal = "true"
+    android:padding = "10dp"
+    android:background = "#7C4DFF" >
+
+    <LinearLayout
+
+        android:layout_marginTop = "150dp"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:background = "#F8F8FF" >
+
+        <TextView
+
+            android:id = "@+id/nameLastNameSignUpTextView"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:padding = "5dp"
+            android:text = "Name Surname:"
+            android:textSize = "19sp" />
+
+        <EditText
+
+            android:id = "@+id/nameLastNameSignUpEditText"
+            android:layout_width = "398dp"
+            android:layout_height = "wrap_content"
+            android:hint = "Enter name and surname"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "5dp"
+        android:layout_below = "@+id/layout_top"
+        android:background = "#F8F8FF" >
+
+        <TextView
+
+            android:id = "@+id/emailSignUpTextView"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:padding = "5dp"
+            android:text = "E-Mail:"
+            android:textSize = "19sp" />
+
+        <EditText
+
+            android:id = "@+id/emailSignUpEditText"
+            android:layout_width = "398dp"
+            android:layout_height = "wrap_content"
+            android:hint = "Enter e-mail" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "5dp"
+        android:layout_below = "@+id/layout_top"
+        android:background = "#F8F8FF" >
+
+        <TextView
+
+            android:id = "@+id/passwordSignUpTextView"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:padding = "5dp"
+            android:text = "Password"
+            android:textSize = "19sp" />
+
+        <EditText
+
+            android:id = "@+id/passwordSignUpEditText"
+            android:layout_width = "398dp"
+            android:layout_height = "wrap_content"
+            android:hint = "EnterPassword" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop = "170dp"
+        android:layout_marginLeft="90dp"
+        android:id="@+id/kayitBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sign_up_my_button_drawable"
+        android:text="Üye Ol"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

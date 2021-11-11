@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#008080"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="#F8F8FF">
+
+        <TextView
+
+            android:id="@+id/nameLastNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Name Surname:"
+            android:textSize="18sp" />
+
+        <EditText
+
+            android:id="@+id/nameLastNameEditText"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter name and surname"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginTop="5dp"
+        android:background="#F8F8FF">
+
+        <TextView
+
+            android:id="@+id/emailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="E Mail:"
+            android:textSize="18sp" />
+
+        <EditText
+
+            android:id="@+id/emailEditText"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+
+            android:hint="Enter e-mail" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#F8F8FF">
+
+        <TextView
+
+            android:id="@+id/passwordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Password:"
+            android:textSize="18sp" />
+
+        <EditText
+
+            android:id="@+id/passwordEditText"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter password"
+            android:password="true"
+            tools:ignore="Deprecated" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:background="#008080">
+
+        <Button
+
+            android:id="@+id/logInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Log In"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Sign Up"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="25sp" />
+    </LinearLayout>
+</LinearLayout>
